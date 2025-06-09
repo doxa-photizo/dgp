@@ -1,0 +1,68 @@
+/* General reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header container */
+.header-titles {
+  background-color: #8B5E3C; /* medium brown */
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation list */
+#navigation {
+  display: flex;
+  justify-content: end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+/* Links inside nav */
+#navigation li a {
+  color: #FFF5E1; /* light beige */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding: 8px 12px;
+}
+
+/* Hover effect */
+#navigation li a:hover {
+  color: #FFDAB3; /* lighter brown/orange shade */
+  border-bottom: 2px solid #FFDAB3;
+}
+
+/* Facebook icon styling */
+#navigation li a svg {
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+
+
+/* Optional submenu styling (if you use it later)
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #A97458; 
+  padding: 10px;
+  border-radius: 4px;
+}
+
+li:hover .submenu {
+  display: block;
+}
+*/
+
+
+.logo{
+  width: 10px;
+  height: 5px;
+  border: 7px;
+  
+}

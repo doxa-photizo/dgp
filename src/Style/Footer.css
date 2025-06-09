@@ -1,0 +1,97 @@
+.footer-area {
+  background-color: #101010;
+  color: #fff;
+  padding: 60px 0 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-logo img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-tittle h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.footer-tittle ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-tittle ul li {
+  margin-bottom: 10px;
+}
+
+.footer-tittle ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-tittle ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-pera p {
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-social {
+  margin-top: 20px;
+}
+
+.footer-social a {
+  color: #ccc;
+  margin-right: 15px;
+  font-size: 22px;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #ffffff;
+}
+
+
+.footer-bottom-area {
+  background-color: #0a0a0a;
+  padding: 20px 0;
+}
+
+.footer-border {
+  border-top: 1px solid #2d2d2d;
+  padding-top: 20px;
+}
+
+.footer-copy-right {
+  font-size: 14px;
+  color: #888;
+}
+
+.footer-copy-right a {
+  color: #f05454;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.footer-copy-right i {
+  color: red;
+  margin: 0 3px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-area .row > div {
+    margin-bottom: 30px;
+  }
+
+  .footer-copy-right {
+    text-align: center;
+  }
+}

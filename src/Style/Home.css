@@ -1,0 +1,102 @@
+/* Home main container */
+.home-container {
+  padding: 2rem;
+  background-color: #FFFBEA; /* soft neutral background to contrast rich colors */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Hero Section */
+.home-hero {
+  background-color: #AB7705; /* golden brown */
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.home-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.home-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.btn-primary {
+  padding: 0.7rem 1.5rem;
+  background-color: #48AB05; /* vibrant green */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #3b8c04;
+}
+
+/* Section styling */
+.home-about,
+.home-services,
+.home-gallery {
+  margin-top: 3rem;
+  text-align: center;
+  color: #333;
+}
+
+.home-about h2,
+.home-services h2,
+.home-gallery h2 {
+  font-size: 2rem;
+  color: #AEA200; /* mustard yellow */
+  margin-bottom: 1rem;
+}
+
+.home-about p,
+.home-services ul {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.home-services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.home-services li {
+  margin: 0.5rem 0;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  background-color: #AB7705;
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  background-color: #8a5f04;
+}
