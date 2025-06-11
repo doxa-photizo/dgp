@@ -6,9 +6,14 @@ body {
 
 /* Header container */
 .header-titles {
-  background-color: #8B5E3C; /* medium brown */
-  padding: 20px 0;
+  background: linear-gradient(45deg, #310b08, #e75e00);
+  padding: 10px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display:flex;
+  align-items: center;
+  
+  
+
 }
 
 /* Navigation list */
@@ -29,12 +34,13 @@ body {
   font-size: 16px;
   transition: color 0.3s, border-bottom 0.3s;
   padding: 8px 12px;
+  align-items: center;
 }
 
 /* Hover effect */
 #navigation li a:hover {
-  color: #FFDAB3; /* lighter brown/orange shade */
-  border-bottom: 2px solid #FFDAB3;
+  color: #e75e00; /* lighter brown/orange shade */
+  border-bottom: 2px solid #e75e00;
 }
 
 /* Facebook icon styling */
@@ -42,6 +48,31 @@ body {
   vertical-align: middle;
   font-size: 20px;
 }
+.logo {
+   width: 200px;  /* Control size only by width */
+  height: auto;  /* Let height scale proportionally */
+  display: block; /* Prevent inline spacing issues */
+  margin: 0 auto; /* Center horizontally */
+  will-change: filter;
+  transition: filter 300ms;
+  filter: drop-shadow(0 0 0.5em #e75e0066);
+
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 6em #f86605);
+}
+/*
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 1em #8a3b07c2);
+  }
+  to {
+    filter: drop-shadow(0 0 4em rgb(255, 104, 3));
+  }
+}*/
+
+
 
 
 
@@ -59,10 +90,3 @@ li:hover .submenu {
 }
 */
 
-
-.logo{
-  width: 10px;
-  height: 5px;
-  border: 7px;
-  
-}

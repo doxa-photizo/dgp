@@ -7,18 +7,65 @@
 
 /* Hero Section */
 .home-hero {
-  background-color: #AB7705; /* golden brown */
+  background: 
+    url('../Assets/tog.jpeg') no-repeat center center,
+    url('../Assets/wek.jpeg') no-repeat center center,
+    url('../Assets/adv.jpeg') no-repeat center center,
+      url('../Assets/aj.jpeg') no-repeat center center;
+  background-size: 110%, 110%; /* both images start slightly zoomed */
+  background-position: center center, center center;
+  background-repeat: no-repeat, no-repeat;
+
   color: white;
   padding: 4rem 2rem;
   text-align: center;
   border-radius: 8px;
   margin-bottom: 3rem;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  animation: zoomBg 10s ease-in-out infinite alternate;
+    animation: switchBg 20s ease-in initial alternate-reverse;
+}
+@keyframes switchBg {
+  0% {
+    background-image: url('../Assets/tha.jpeg');
+  }
+  50% {
+    background-image: url('../Assets/wek.jpeg');
+  }
+  75% {
+    background-image: url('../Assets/aj.jpeg');
+  }
+  100% {
+    background-image: url('../Assets/adv.jpeg');
+  }
+}
+@keyframes zoomBg {
+  0% {
+    background-size: 110%, 110%;
+  }
+  50% {
+    background-size: 120%, 120%;
+  }
+  100% {
+    background-size: 110%, 110%;
+  }
 }
 
+
 .home-hero h1 {
-  font-size: 3rem;
+  font-size: 4rem; /* slightly larger for strong impact */
   margin-bottom: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: #ddf8c4; /* gold tone for richness */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* soft shadow for depth */
+  text-transform: uppercase;
+  transition: transform 0.3s ease;
+}
+
+.home-hero h1:hover {
+  transform: scale(1.05);
 }
 
 .home-hero p {
@@ -99,4 +146,17 @@
 .gallery-item:hover {
   transform: translateY(-5px);
   background-color: #8a5f04;
+}
+.home-services ul{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  align-content: space-between;
+
+
+}
+
+.home-services ul li{
+  margin: 10px;
+  margin-left: 30px;
 }

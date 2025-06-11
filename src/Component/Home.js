@@ -6,7 +6,8 @@ const Home = () => {
   return (
     <div className="home-container">
       <header className="home-hero">
-        <h1>Welcome to DGP Fashion</h1>
+        
+        <h1>AKWAABA</h1>
         <p>Your style, your identity.</p>
         <a href="#shop" className="btn-primary">Shop Now</a>
       </header>
@@ -20,7 +21,7 @@ const Home = () => {
         <button><Link to="/about"> Learn More</Link></button>
       </section>
 
-      <section className="home-services" id="services">
+      <section className="home-services">
         <h2>Our Services</h2>
         <ul>
           <li>Custom Tailoring</li>

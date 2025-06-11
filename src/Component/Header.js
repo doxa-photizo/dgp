@@ -2,14 +2,17 @@ import React from 'react'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { MdFacebook} from 'react-icons/md';
 import '../Style/Header.css';
-import hja from '../Assets/hja.jpeg';
+import dgplogo from '../Assets/dgp.png';
 
 
  export default function Header() {
   return (
     <div>
       <div className="header-titles">
-        <div> <img src={hja} alt='logo' width={"30px"} /></div>
+    <div>
+  <img src={dgplogo} alt='logo' className="logo" />
+</div>
+
         <nav>
           <ol id="navigation">
             <li>< Link to="/">Home</Link></li>
